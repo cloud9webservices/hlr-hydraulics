@@ -13,6 +13,7 @@ const oswald = Oswald({
   variable: "--font-heading",
 });
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({
   children,
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${oswald.variable}`}>
         <Navbar /> {/* SERVER COMPONENT */}
         {children}
+         <Footer /> {/* SERVER COMPONENT */}
       </body>
     </html>
   );

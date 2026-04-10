@@ -13,7 +13,8 @@ export default async function Navbar() {
   const settings = await client.fetch(`
     *[_type == "siteSettings"][0]{
       title,
-      logo
+      logo, 
+      phone
     }
   `);
 
@@ -34,6 +35,9 @@ export default async function Navbar() {
         <Link href="/services">Services</Link>
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
+         <a href={`tel:${settings.phone}`} className="btn-custom">
+              call now
+          </a>
       </div>
     </nav>
   );

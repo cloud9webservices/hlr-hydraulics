@@ -33,3 +33,25 @@
     height: 100%;
     object-fit: cover;
 }
+
+.btn-custom {
+  display: inline-block;
+  padding: 12px 20px;
+  background: red;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 1px solid red;
+
+  &:hover, &:active{
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+
+  }
+}
+

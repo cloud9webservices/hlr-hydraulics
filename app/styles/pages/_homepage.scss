@@ -1,0 +1,80 @@
+@use "../base/template_variables" as *;
+
+#hero_wrapper {
+  position: relative;
+  height: 80vh;
+
+  @media (min-width: $md-min) {
+    height: 90vh;
+  }
+
+  .container-custom {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#homepage_bullets {
+  ul {
+    padding: 0;
+  }
+  .key_values {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: $md-min) {
+      .line {
+        height: 5rem;
+        background-color: var(--foreground);
+        width: 1px;
+        margin-left: 1rem;
+      }
+      &:last-of-type {
+        .line {
+          display: none;
+        }
+      }
+    }
+  }
+}
+#homepage_services {
+  .single_service {
+    .services_image_wrapper {
+      background-color: black;
+      position: relative;
+      overflow: hidden;
+      .hidden_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: #fff;
+        padding: 1rem;
+        width: 100%;
+        line-height: 1;
+      }
+      img {
+        position: relative;
+        z-index: 3;
+        transition:
+          opacity 400ms ease,
+          transform 400ms ease;
+      }
+    }
+    &:hover {
+      img {
+        opacity: 0.15;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+#homepage_location {
+  .btn-custom {
+    width: fit-content;
+  }
+}

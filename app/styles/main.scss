@@ -1,0 +1,24 @@
+
+/* =========================
+   VARIABLES FIRST
+========================= */
+
+@use "./base/template_variables";
+
+/* =========================
+   BASE STYLES
+========================= */
+@use "./base/base";
+@use "./base/custom_classes";
+
+/* =========================
+   LAYOUT
+========================= */
+@use "./layout/header";
+
+
+/* =========================
+   PAGES
+========================= */
+@use "./pages/homepage";
+@use "./pages/services";

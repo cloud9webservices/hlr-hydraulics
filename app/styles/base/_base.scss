@@ -91,8 +91,7 @@ color: var(--foreground);
 }
 
 a:hover {
-  color: $brand_colour;
-  text-decoration: underline;
+  color: red;
 }
 
 
@@ -135,5 +134,11 @@ strong {
 
 em {
   font-style: italic;
+}
+
+.main_logo{
+  &:hover, &:active{
+    cursor: pointer;
+  }
 }
 

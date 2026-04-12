@@ -104,7 +104,7 @@ export default async function PreviewPage() {
   //   },
   // };
   async function getServices() {
-    return await client.fetch(`*[_type == "service"]`);
+    return await client.fetch(`*[_type == "service" && showOnHomepage]`);
   }
   const services = await getServices();
 
@@ -127,7 +127,7 @@ export default async function PreviewPage() {
         {thispage?.heroImage && (
           <img
             className="img-full"
-            src={urlFor(thispage.heroImage).width(1200).url()}
+            src={urlFor(thispage.heroImage).width(1680).url()}
             alt={thispage.title}
           />
         )}
@@ -150,7 +150,7 @@ export default async function PreviewPage() {
             <h2>{who_we_are.title}</h2>
             <PortableText value={who_we_are.content} />
           </div>
-          <div className="image_wrapper md:w-1/2">
+          <div className=" md:w-1/2">
             {who_we_are?.heroImage && (
               <img
                 className="img-full"
@@ -189,16 +189,18 @@ export default async function PreviewPage() {
               {services.map((service: any) => (
                 <div
                   key={service._id}
-                  className="homepage_single_service border rounded-xl shadow-sm hover:shadow-lg transition"
+                  className="single_service border rounded-xl shadow-sm hover:shadow-lg transition"
                 >
-                  <div>
+                  <div className="services_image_wrapper">
                     {service?.image && (
                     <img
                       className="img-full"
                       src={urlFor(service.image).width(500).url()}
                       alt={service?.title || "image"}
                     />
+                
                   )}
+                  <h5 className="hidden_text">{service.description}</h5>
                   </div>
 
                   <div className="p-6">

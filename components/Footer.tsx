@@ -54,12 +54,12 @@ export default async function Footer() {
           >
             Home
           </Link>
-          <Link
+          {/* <Link
             href="/about"
             className="hover:text-white text-sm sm:text-base md:text-lg"
           >
             About
-          </Link>
+          </Link> */}
           <Link
             href="/services"
             className="hover:text-white text-sm sm:text-base md:text-lg"

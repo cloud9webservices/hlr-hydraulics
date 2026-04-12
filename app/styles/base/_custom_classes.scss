@@ -46,6 +46,7 @@
   transition: all 0.3s ease;
   text-decoration: none;
   border: 1px solid red;
+  width: fit-content;
 
   &:hover, &:active{
     background: #000;

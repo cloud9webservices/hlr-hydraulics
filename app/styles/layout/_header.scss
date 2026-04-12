@@ -1,1 +1,7 @@
+ #navbar{
+    .nav_link:hover, &:active{
+        text-decoration: none !important;
+        color: red !important;
+    }
+ }
  

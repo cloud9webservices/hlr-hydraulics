@@ -2,6 +2,11 @@
 import { Inter, Oswald } from "next/font/google";
 import "./globals.css";
 import "./styles/main.scss";
+export const metadata = {
+  title: "HLR Hydraulics",
+  description: "24/7 mobile hydraulic repair in Orangeville and surronding Ontario areas",
+};
+
 
 const inter = Inter({
   subsets: ["latin"],

@@ -1,7 +1,11 @@
 import { client } from "@/lib/sanity";
 import { urlFor } from "@/lib/image";
 import Link from "next/link";
-
+export const metadata = {
+  title: "Contact HLR Hydraulics | Orangeville & Dufferin County",
+  description:
+    "Contact HLR Hydraulics for 24/7 mobile hydraulic repair in Orangeville, Dufferin County, and surrounding areas in Ontario. Fast response and reliable on-site service when you need it most.",
+};
 export default async function ContactPage() {
   const thispage = await client.fetch(
     `*[_type == "page" && _id == $id][0]{

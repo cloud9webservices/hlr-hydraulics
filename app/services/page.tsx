@@ -6,7 +6,11 @@ async function getServices() {
   return await client.fetch(`*[_type == "service"]`);
 }
 
-
+export const metadata = {
+  title: "Hydraulic Repair Services | HLR Hydraulics",
+  description:
+    "Expert 24/7 mobile hydraulic repair services in Orangeville and surrounding Ontario areas.",
+};
 export default async function ServicesPage() {
   const services = await getServices();
 

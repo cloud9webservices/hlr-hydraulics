@@ -1,5 +1,5 @@
 export default async function sitemap() {
-  const baseUrl = "https://hlrhydraulics.com";
+  const baseUrl = "https://www.hlrhydraulics.com";
 
   const pages = [
     { url: "/", lastModified: new Date() },

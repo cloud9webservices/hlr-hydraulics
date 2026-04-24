@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hlrhydraulics.com/sitemap.xml
+Sitemap: https://www.hlrhydraulics.com/sitemap.xml

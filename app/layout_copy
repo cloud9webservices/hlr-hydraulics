@@ -28,7 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${oswald.variable}`}>
+        <Navbar /> {/* SERVER COMPONENT */}
         {children}
+         <Footer /> {/* SERVER COMPONENT */}
       </body>
     </html>
   );
